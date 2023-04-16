@@ -22,21 +22,21 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#0099cc'
+define gui.accent_color = '#63b8a3'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#ecf3ef'
+define gui.idle_color = '#b3455d'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#7a939b'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#2d7220'
+define gui.selected_color = '#7a939b'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#8888887f'
@@ -54,7 +54,7 @@ define gui.interface_text_color = u'#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = gui.preference("font", default="DejaVuSans.ttf")
+define gui.text_font = gui.preference("font", default="fonts/GochiHand-Regular.ttf")
 
 ## Set a completely custom variable tied to the font size to avoid
 ## having both typeface buttons highlighted.
@@ -65,7 +65,7 @@ default persistent.typeface = "DejaVuSans"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/Ubuntu-Regular.ttf"
+define gui.interface_text_font = "fonts/GochiHand-Regular.ttf"
 
 ## The font used for hyperlink text. Should be the same as gui.interface_text_font.
 
