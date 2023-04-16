@@ -154,6 +154,7 @@ init python:
     business = "audio/music/Future-Business_v001.mp3"
     concrete = "audio/music/The-Concrete-Bakes_Looping.mp3"
     garden = "audio/music/Sculpture-Garden_Looping.mp3"
+    million = "audio/music/A_Million_Pictures_Of_You.mp3"
     summer = "audio/music/Careless-Summer_Looping.mp3"
 
 # This is where you define the music captions for each music file you will be using in the game. Please make sure the names of the music defined above match the ones used for the captions below.
@@ -165,6 +166,7 @@ init python:
     business : _("Future Business"),
     concrete : _("The Concrete Bakes"),
     garden : _("Sculpture Garden"),
+    million : _("A Million Pictures of You"),
     summer : _("Careless Summer")
     }
 

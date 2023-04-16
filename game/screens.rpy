@@ -105,7 +105,7 @@ screen say(who, what):
         ### IMPORTANT: The Transform() is holding the window background, and the alpha variable ties to our say window alpha
 
         id "window"
-
+        
         if who is not None:
 
             window:
@@ -114,6 +114,7 @@ screen say(who, what):
                 text who id "who"
 
         text what id "what"
+        
 
     use quick_menu
 
@@ -127,7 +128,7 @@ screen say(who, what):
 init python:
     config.character_id_prefixes.append('namebox')
 
-default persistent.say_window_alpha = 0.75
+default persistent.say_window_alpha = 0.95
 
 style window is default
 style say_label is default
@@ -144,7 +145,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/old-paper.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -301,10 +302,10 @@ screen navigation():
 
     vbox:
         style_prefix "navigation"
-
+    
         if renpy.get_screen("main_menu"):
-
-            xalign 0.5 # originally: xpos gui.navigation_xpos
+            
+            xalign 0.9 # originally: xpos gui.navigation_xpos
             yalign 0.9
         else:
             xalign 0.1 # originally: xpos gui.navigation_xpos
@@ -415,7 +416,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    # background "gui/overlay/main_menu.png" # removed overlay on menu screen
+    background "gui/overlay/main_menu_overlay2.png" # MAIN MENU OVERLAY IMAGE HERE!
 
 style main_menu_vbox:
     xalign 1.0
@@ -1354,7 +1355,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ "gui/overlay/old-paper2.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5

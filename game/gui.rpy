@@ -98,6 +98,8 @@ define gui.title_text_size = 75
 
 ## The images used for the main and game menus.
 define gui.main_menu_background = "gui/main_menu.png"
+# for a video bg
+# define gui.main_menu_background = Movie(play="<loc>/<file_name>")
 define gui.game_menu_background = "gui/game_menu.png"
 
 
