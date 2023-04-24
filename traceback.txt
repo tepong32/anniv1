@@ -1,42 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00start.rpy", line 215, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 517, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 517, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+While processing the color property of style default:
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+Exception: Color string '000dfdf' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 215, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 517, in script
-    python hide:
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 517, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/loadsave.py", line 769, in load
-    log.unfreeze(roots, label="_after_load")
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/rollback.py", line 1078, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/rollback.py", line 889, in rollback
-    self.load_failed()
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/rollback.py", line 807, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\main.py", line 76, in run
+    renpy.translation.init_translation()
+  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\translation\__init__.py", line 583, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\translation\__init__.py", line 672, in change_language
+    i()
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+  File "style.pyx", line 796, in renpy.style.rebuild
+  File "style.pyx", line 789, in renpy.style.build_styles
+  File "style.pyx", line 710, in renpy.style.build_style
+  File "style.pyx", line 707, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 323, in style_functions.color_property
+  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\color.py", line 167, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string '000dfdf' must be 3, 4, 6, or 8 hex digits long.
 
-Linux-5.19.0-38-generic-x86_64-with-glibc2.35 x86_64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Happy 1st Anniv! 1.0
-Sun Apr 16 16:34:46 2023
+Mon Apr 24 13:35:32 2023
