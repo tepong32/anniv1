@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 307: 'background' is not a keyword argument or valid child for the vbox statement.
-    background "gui/overlay/old-paper.png"pos (0.65, 0.5)
+File "game/script.rpy", line 160: end of line expected.
+(Perhaps you left out a " at the end of the first line.)
+    nar_nvl """
               ^
+        So, ito yung pinagpupuyatan ko the last few nights na medyo ikinaka-toyo mo...
+        \"Sige na, gawin mo na yung pinagkakaabalahan mo. Matutulog na 'ko.\"
+        {size="8"}--- Jessa Marie, July 28, 2022{/size}
+    
+        I was actually coding + testing the code on a live (but free) server and, luckily, gumana naman. Hehe
+        Sharawt sayo, Jessa Marie Guico!
+        """
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr 16 13:52:30 2023
+Mon Apr 24 20:55:21 2023

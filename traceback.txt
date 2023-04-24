@@ -1,43 +1,86 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the color property of style default:
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-Exception: Color string '000dfdf' must be 3, 4, 6, or 8 hex digits long.
+While processing text tag {i size=24} in "So ayon na nga, 'no? {i size=24}(in CongTV's voice){/i} Pasensya na't biglaan ko lang naisip 'tong idea of a website for you.".:
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 495, in _execute_python_hide
+    ui.interact(suppress_overlay=True, suppress_underlay=True)
+Exception: Unknown text tag 'i size=24'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
-    run(restart)
-  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\main.py", line 76, in run
-    renpy.translation.init_translation()
-  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\translation\__init__.py", line 583, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\translation\__init__.py", line 672, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 796, in renpy.style.rebuild
-  File "style.pyx", line 789, in renpy.style.build_styles
-  File "style.pyx", line 710, in renpy.style.build_style
-  File "style.pyx", line 707, in renpy.style.build_style
-  File "gen3-static/style_functions.pyx", line 323, in style_functions.color_property
-  File "C:\Users\Administrator\Desktop\Github\renpy-8.0.3-sdk\renpy\color.py", line 167, in __new__
-    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
-Exception: Color string '000dfdf' must be 3, 4, 6, or 8 hex digits long.
+  File "renpy/common/00keymap.rpy", line 473, in script
+    python hide:
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 473, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 495, in _execute_python_hide
+    ui.interact(suppress_overlay=True, suppress_underlay=True)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/screen.py", line 704, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 1334, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 1105, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/viewport.py", line 578, in render
+    rend = renpy.display.render.render(self.children[0], child_width, child_height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 1334, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/text/text.py", line 2109, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/text/text.py", line 627, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/text/text.py", line 1278, in segment
+    raise Exception("Unknown text tag %r" % text)
+Exception: Unknown text tag 'i size=24'
 
-Windows-10-10.0.19045 AMD64
+Linux-5.19.0-40-generic-x86_64-with-glibc2.35 x86_64
 Ren'Py 8.0.3.22090809
 Happy 1st Anniv! 1.0
-Mon Apr 24 13:35:32 2023
+Mon Apr 24 21:04:54 2023
