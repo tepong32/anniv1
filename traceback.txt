@@ -1,13 +1,13 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {i size=24} in "So ayon na nga, 'no? {i size=24}(in CongTV's voice){/i} Pasensya na't biglaan ko lang naisip 'tong idea of a website for you.".:
+While processing text tag {/size} in 'Habang nag-eempake ka kamo ng dadalhin mo sa Boracay at galit ka sa\'kin kase nga {color=#fff}"hoy"{/} ang CS natin, \nI\'m looking forward to our first monthsary. \n(Tho monthsaries are not that good-sounding for me kasi hindi na magiging ganun ka-special yung anniv, at least, sa first, bonggahan natin! ;) ){/size}'.:
   File "renpy/common/00keymap.rpy", line 473, in script
     python hide:
   File "renpy/common/00keymap.rpy", line 473, in <module>
     python hide:
   File "renpy/common/00keymap.rpy", line 495, in _execute_python_hide
     ui.interact(suppress_overlay=True, suppress_underlay=True)
-Exception: Unknown text tag 'i size=24'
+Exception: '/size' closes a text tag that isn't open.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -60,8 +60,8 @@ Full traceback:
     surf = render(d, width - x, rh, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/viewport.py", line 578, in render
-    rend = renpy.display.render.render(self.children[0], child_width, child_height, st, at)
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/viewport.py", line 629, in render
+    surf = renpy.display.render.render(c, cw, ch, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
   File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/layout.py", line 1334, in render
@@ -76,11 +76,11 @@ Full traceback:
     virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
   File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/text/text.py", line 627, in __init__
     self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/text/text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'i size=24'
+  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/text/text.py", line 1058, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/size' closes a text tag that isn't open.
 
-Linux-5.19.0-40-generic-x86_64-with-glibc2.35 x86_64
+Linux-5.19.0-41-generic-x86_64-with-glibc2.35 x86_64
 Ren'Py 8.0.3.22090809
 Happy 1st Anniv! 1.0
-Mon Apr 24 21:04:54 2023
+Sat May  6 12:55:22 2023

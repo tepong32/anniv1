@@ -1,5 +1,5 @@
-Mon Apr 24 21:20:41 2023
-Linux-5.19.0-40-generic-x86_64-with-glibc2.35
+Sat May  6 13:00:56 2023
+Linux-5.19.0-41-generic-x86_64-with-glibc2.35
 Ren'Py 8.0.3.22090809
  
 
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init took 0.04s
 Early init took 0.00s
 Loader init took 0.00s
 Loading error handling took 0.02s
-Loading script took 0.15s
+Loading script took 0.14s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: OSError('/home/ungasis/Downloads/renpy-8.0.3-sdk/lib/py3-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory')
@@ -42,15 +42,15 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) UHD Graphics 630 (CML GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 22.2.5'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1189, 669) drawable=(1189, 669)
+Screen sizes: virtual=(1920, 1080) physical=(997, 561) drawable=(997, 561)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 71.87s
+Bootstrap to the start of init.init took 63.89s
 Early init took 0.00s
 Loader init took 0.00s
 Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata. took 0.00s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: OSError('/home/ungasis/Downloads/renpy-8.0.3-sdk/lib/py3-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory')
 Running init code took 0.02s
@@ -85,18 +85,61 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) UHD Graphics 630 (CML GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 22.2.5'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1189, 669) drawable=(1189, 669)
+Screen sizes: virtual=(1920, 1080) physical=(997, 561) drawable=(997, 561)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 132.40s
+Bootstrap to the start of init.init took 112.02s
 Early init took 0.00s
 Loader init took 0.00s
 Loading error handling took 0.01s
-Loading script took 0.06s
+Loading script took 0.07s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Faled to initialize steam: OSError('/home/ungasis/Downloads/renpy-8.0.3-sdk/lib/py3-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory')
 Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to '/home/ungasis/.renpy/backups/AnnivProj':
+Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) UHD Graphics 630 (CML GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 22.2.5'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(997, 561) drawable=(997, 561)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 115.28s
+Early init took 0.00s
+Loader init took 0.00s
+Loading error handling took 0.01s
+Loading script took 0.05s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/ungasis/Downloads/renpy-8.0.3-sdk/lib/py3-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory')
+Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -107,7 +150,7 @@ Initial gc. took 0.02s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.02s
 Analyze screens took 0.00s
@@ -127,46 +170,5 @@ Vendor: "b'Intel'"
 Renderer: b'Mesa Intel(R) UHD Graphics 630 (CML GT2)'
 Version: b'4.6 (Compatibility Profile) Mesa 22.2.5'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1189, 669) drawable=(1189, 669)
+Screen sizes: virtual=(1920, 1080) physical=(997, 561) drawable=(997, 561)
 Maximum texture size: 4096x4096
-Traceback (most recent call last):
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/lib/py3-linux-x86_64/../../renpy.py", line 251, in <module>
-    main()
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/lib/py3-linux-x86_64/../../renpy.py", line 247, in main
-    renpy.bootstrap.bootstrap(renpy_base)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/main.py", line 660, in main
-    run(restart)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/execution.py", line 938, in run_context
-    context.run()
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/execution.py", line 581, in run
-    node.execute()
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "renpy/common/00nvl_mode.rpy", line 377, in do_display
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/display/core.py", line 2609, in draw_screen
-    renpy.display.draw.draw_screen(surftree)
-  File "gl2draw.pyx", line 839, in renpy.gl2.gl2draw.GL2Draw.draw_screen
-  File "gl2draw.pyx", line 1341, in renpy.gl2.gl2draw.GL2DrawingContext.draw
-  File "gl2draw.pyx", line 1322, in renpy.gl2.gl2draw.GL2DrawingContext.draw_one
-  File "gl2draw.pyx", line 1322, in renpy.gl2.gl2draw.GL2DrawingContext.draw_one
-  File "gl2draw.pyx", line 1236, in renpy.gl2.gl2draw.GL2DrawingContext.draw_one
-  File "gl2draw.pyx", line 1191, in renpy.gl2.gl2draw.GL2DrawingContext.draw_model
-  File "/home/ungasis/Downloads/renpy-8.0.3-sdk/renpy/gl2/gl2shadercache.py", line 209, in get
-    def get(self, partnames):
-KeyboardInterrupt

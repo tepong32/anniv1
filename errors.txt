@@ -2,17 +2,16 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 160: end of line expected.
+File "game/script.rpy", line 139: end of line expected.
 (Perhaps you left out a " at the end of the first line.)
-    nar_nvl """
+    nar_nvl """So, ito yung pinagpupuyatan ko the last few nights na medyo ikinaka-toyo mo...
               ^
-        So, ito yung pinagpupuyatan ko the last few nights na medyo ikinaka-toyo mo...
-        \"Sige na, gawin mo na yung pinagkakaabalahan mo. Matutulog na 'ko.\"
-        {size="8"}--- Jessa Marie, July 28, 2022{/size}
+        
+        {color=#fff}\n"Sige na, gawin mo na yung pinagkakaabalahan mo. Matutulog na 'ko.\"{/color}
+        \n{size=20}--- Jessa Marie, July 28, 2022{/size}
     
         I was actually coding + testing the code on a live (but free) server and, luckily, gumana naman. Hehe
-        Sharawt sayo, Jessa Marie Guico!
         """
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Apr 24 20:55:21 2023
+Sat May  6 12:49:09 2023

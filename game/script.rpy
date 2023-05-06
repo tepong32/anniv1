@@ -1,28 +1,15 @@
 ﻿# The script of the game goes in this file.
 
-# Set up LayeredImage Sprites
-layeredimage teppy:
-
-    group base auto:
-        attribute shirt default
-
-    if casual:
-        pos (0, 40)
-        "me poker"
-
-    group face auto:
-        attribute neutral default
-
-# This adds Eileen's headband to her sprite when True
-default casual = False
-
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define t = Character("Teppy", color="#f88787", image="me", height=0.2)
+image smile01 = "images/sprites/teppy_sprites/shirt smile01.png"
+
+
+define t = Character("Teppy", color="#f88787", image="shirt smile01.png", height=0.2)
 # reference to side images: https://www.renpy.org/doc/html/side_image.html
-image side me poker = "me poker.png"
-define config.side_image_tag = "me" 
+image side smile01 = "images/sprites/teppy_sprites/shirt smile01.png"
+define config.side_image_tag = "smile" 
 define config.side_image_only_not_showing = True
 # This transform block below works if the images are of the same sizes. EG: just changing emotions
 # transform same_transform(old, new):
@@ -32,9 +19,13 @@ define config.side_image_only_not_showing = True
 # define config.side_image_same_transform = same_transform
 
 
-define e_nvl = Character("Teppy", color="#f88787", kind=nvl, image="me")         # IDK what this is for yet
+define e_nvl = Character("Teppy", color="#f88787", kind=nvl, image="smile")         # IDK what this is for yet
 define nar_nvl = nvl_narrator
 
+image anya_movie = Movie(play="images/anya.webm", loop=False, pos=(210, -500), anchor=(10, 10), alpha=0.9) #side_mask=True, 
+
+# $ renpy.movie_cutscene("oa4_launch.webm") # place this where you want a cutscene placed. Hides when movie ends/user clicks.
+ 
 
 
 
@@ -111,71 +102,66 @@ label start:
 
     # scene room
 
-    # This shows a character sprite.
+    t "Hello there! Intro muna tayo. ;)"
+    t "So, I've been racking-up my brain for the past few weeks to have this improved version of my Digital Lover Letter."
+    t "I think this is {i}{b}waaaaay{/b}{/i} better naman compared dun sa {color=#000}\"Pa-farewell\"{/color} I sent Jessa a few months ago."
 
+    show smile01 at right with fade:
+        ## Adjust sprite's attributes here accordingly
+        # yoffset 250
+        zoom 0.5   # this zoom fits as using the image as a side image 
     
 
+    show anya_movie behind smile01
+    t "OK! So, ayun na nga. Intro muna tayo pang-flex sa ibang magtatangkang i-install 'to. ;)"
+    t "You guys can get up to a certain point of this letter pero since this was {b}especially made for Jessa{/b}, the personal stuffs will be locked and will require a password. ;)"
+    "{size=20}{i}Hope this gives you a hint of how well-thought-out this project is. (charaught){/i}{/s}"
+    t "Osigesigesigesige... Enough of those boring stuffs! (Pinapanood mo ba muna ung BG vid? hehe)"
+    ""
+    t "Also, I doubt na you people had the chance to see the website I created for our first monthsary. {size=20}{i}(I created a website. I studied how to make those, too.){i}{/s}"
+    t "Unfortunately, hindi na sya available as I forgot the credentials I used for it and then, nag-expire na sya."
+    t "Good thing is, nai-save ko naman yung copy ko nun and I included that first-ever-bonggang-dedication-letter ko para kay {b}Labidabs Jessa{/b} ko dito."
+    ic "{size=20}{i}(Of course! Kasi wala akong ipapakita sa iba kung hindi ko yun ilalagay. Very personal yung anniv dedication letter ko, guys. Sorry!){/i}{/s}"
+    hide anya_movie
+    hide smile01
+    # show smile01 nvl at right with fade
+    
     # This plays our music file in a way that if audio captions are on,
     # it will tell us the name of the song. This music plays at full volume
     # after 2 seconds and fades out after 2 seconds when stopped.
-    # $ play_music(garden,fadein=2.0,fadeout=2.0)
+    $ play_music(million,fadein=2.0,fadeout=2.0)
+    # play music million fadein 0.5
 
-    # This unlocks the the achievement with the corresponding name
-    $ achievement.grant("Beginning")
-
-    # This adds an integer value to a point-based achievement.
-    # To track how much of it has been earned, use a regular variable for now.
-    # $ achievement.progress("Point_Collector", 10)
-    # $ persistent.points =+ 10
-
-    t "Hello there! Intro muna tayo. ;)"
-    t "So, I've been racking-up my brain for the past few weeks to have this improved version of my Digital Lover Letter."
-    t "I think this is {i}{b}waaaaay{/b}{/i} better naman compared dun sa {color=#000}\"Pa-farewell\"{/color}."
-    ic "{i}(Wait lang, nag-aayos pa 'ko ng buhok...){/i}"
-
-    show me poker at right:
-        ## Adjust sprite's attributes here accordingly
-        # yoffset 250
-        # zoom 0.5    
-    with fade
-
-    t "OK! So, ayun na nga. Intro muna tayo pang-flex sa ibang magtatangkang i-install 'to. ;)"
-    t "You guys can get up to a certain point of this letter pero since this was {b}especially made for Jessa{/b}, the personal stuffs will be locked and will require a password. ;)"
-    t "I hope this gives you a hint of how well-thought-out this project is. (charaught)"
-    t "Osigesigesigesige... Enough of those boring stuffs!"
-    ""
-    t "I doubt na you had the chance to see the website I created for our first monthsary. (Yep, I created a website. I know how to make those, too.)"
-    t "Unfortunately, hindi na sya available as I forgot the credentials I used for it and then, nag-expire na sya."
-    t "Good thing is, nai-save ko naman yung copy ko nun and I included that first-ever-bonggang-dedication-letter ko para kay {b}Labidabs Jessa{/b} ko dito."
-    ""
-
-    hide me with fade
-
-    ic "{i}(Of course! Kasi wala akong ipapakita sa iba kung hindi ko yun ilalagay. Very personal yung anniv dedication letter ko, guys. Sorry!){/i}"
+    t nvl "Medyo mahaba 'to since wala naman akong ipapakita sa ibang tao kung hindi ko yun ilalagay so,..Kayo na mag-adjust. >.<"
     
-    show me nvl at right with fade
-    t nvl "Change outfit! \nMedyo mahaba 'to, so...Kayo na bahala. >.<"
-
-    nar_nvl "{i}Originally posted on July 28, 2022, 1:21 p.m. with removed \"not-so-important parts\".{/}"
+    # page 1
+    nar_nvl "{i}{size=20}Originally posted on July 28, 2022, 1:21 p.m. with removed \"not-so-important parts\".{/}"
+    nar_nvl "{i}{size=20}Here it goes:{/}"
     nar_nvl """So, ito yung pinagpupuyatan ko the last few nights na medyo ikinaka-toyo mo...
     
-    \"Sige na, gawin mo na yung pinagkakaabalahan mo. Matutulog na 'ko.\"
+    {color=#fff}\n\"Sige na, gawin mo na yung pinagkakaabalahan mo. Matutulog na 'ko.\"{/}
     \n{size=20}--- Jessa Marie, July 28, 2022{/size}
 
     I was actually coding + testing the code on a live (but free) server and, luckily, gumana naman. Hehe
     """
     nar_nvl "Sharawt sayo, {color=#fff}Jessa Marie Guico!{/color}"
-    nar_nvl "So ayon na nga, 'no? {i}{size=24}(in CongTV's voice){/size}{/i} Pasensya na't biglaan ko lang naisip 'tong idea of a website for you."
-    nar_nvl """Habang nag-eempake ka kamo ng dadalhin mo sa Boracay at galit ka sa'kin kase nga \"hoy\" ang CS natin,
-    \nI'm looking forward to our first monthsary. {size=24}
-    \n(Tho monthsaries are not that good-sounding for me kasi hindi na magiging ganun ka-special yung anniv, at least, sa first, bonggahan natin! ;) ){/size}
+    nar_nvl "So ayon na nga, 'no? {i}{size=20}(in CongTV's voice){/size}{/i} Pasensya na't biglaan ko lang naisip 'tong idea of a website for you."
+    nar_nvl """Habang nag-eempake ka kamo ng dadalhin mo sa Boracay at galit ka sa'kin kase nga {color=#fff}\"hoy\"{/color} ang CS natin,
+    \nI'm looking forward to our first monthsary. {i}{size=20}(Tho monthsaries are not that good-sounding for me kasi hindi na magiging ganun ka-special yung anniv, at least, sa first, bonggahan natin! ;) ANYWAYS...){/}
     
     \n...saka na yung common things like flowers and chocolates."""
+    nar_nvl ""
+
+    nvl clear
+    # page 2
+    nar_nvl "" 
     nar_nvl """So, eto na nga. Habang galit ka sa'kin, nag-iisip na ko ng kakaibang First-Month-Congratulatory-Gift sayo kasi nakatagal ka sa'kin. Hehe
     
-    Sabi ko sa'yo, di ba, eleven years kitang hinintay? Eleven years akong walang ganito so, for the first time after such a long time, gagawa ako ng something na kakaiba ...para sa'yo.
+    Sabi ko sa'yo, di ba, {color=#fff}eleven years kitang hinintay?{/color} Eleven years akong walang ganito."""
+    nar_nvl "{i}so, for the first time after such a long time, gagawa ako ng something na kakaiba{i}"
+    nar_nvl """\n{u}{color=#fff}...para sa'yo{/color}.{/u}
 
-    {i}{size=24}(Disclaimer: ngayon lang 'to kasi nga special.)
+    {i}{size=20}(Disclaimer: ngayon lang 'to kasi nga special.)
     (Note: Pwede mo 'tong ipakita sa iba since wala akong sasabihing kabalbalan dito...or, at least, I will try. HAHA! Ang haba ng pasakalye ko.){/size}{/i}"""
 
 

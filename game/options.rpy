@@ -79,7 +79,7 @@ define config.sample_voice = "sample-voice.ogg"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = million     # GAME'S MUSIC! Change this using the variables on accessibility.rpy
+# define config.main_menu_music = million     # GAME'S MUSIC! Change this using the variables on accessibility.rpy
 
 
 ## Transitions #################################################################

@@ -166,7 +166,7 @@ init python:
     business : _("Future Business"),
     concrete : _("The Concrete Bakes"),
     garden : _("Sculpture Garden"),
-    million : _("A Million Pictures of You"),
+    million : _("A Million Pictures of You - Simple Plan"),
     summer : _("Careless Summer")
     }
 
