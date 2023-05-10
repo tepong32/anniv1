@@ -227,8 +227,15 @@ label start:
     ##################### after the 1st month message here
     nvl clear
 
-    e_nvl "Not all games may need to use both ADV and NVL, but it's nice to have options as a developer."
-    nar_nvl "Eileen wonders where she should travel to."
+    show shirt happy02 with dissolve
+    t "So, ayun na nga, 'no? Hanggang dito lang yung para sa inyo, mga mars. :D"
+    show shirt smile01
+    t "May password na yung pang anniv na message ko so, kung gusto nyo, ichat nyo na lang si Jessa para mabasa nyo rin. hehe"
+    t "Thank you sa pagsilip at kung trip nyo rin magpagawa ng ganito, pwede naman. Basta hindi madalian...at hindi libre! HAHA!"
+
+    ##################### pw required area
+    e_nvl "So, alam mo ba yung password?"
+    nar_nvl "Kung oo, good!:"
 
     stop music fadeout 1.0
 
@@ -237,18 +244,15 @@ label start:
 
     menu (nvl=True):
 
-        "Office":
+        "Yesh, besh. Alam ko, besh!":
 
             ## This empty label is solely for replay mode purposes.
 
-            label office:
+            label yes:
 
                 pass
 
-            t "To the office? Okay...?"
-
-            $ achievement.grant("Office")
-
+            t "Wow? Persistent maki... Okay. Payag si Labidabs e."
             $ play_music(business,fadein=2.0,fadeout=2.0)
 
             scene future_office
@@ -256,31 +260,25 @@ label start:
                 yoffset 250
             with fade
 
-            t "Ugh, you know that saying about \"all work and no play,\" right?"
+            t "something here al;kasdfjkasdfhaklsdfhjklasdkjlkaskjfdhaksjdfhaklsjdfhasdfjkh"
 
             "Eileen seems bothered by something."
 
-        "Beach":
+        "Hindi. Sige, out na 'ko.":
 
-            label beach:
+            label no:
 
                 pass
 
-            t "The beach sounds fun!"
-
-            $ achievement.grant("Beach")
-
+            t "Salamat ulet, mars! Na-appreciate ko 'yung paglaan mo ng oras para sa kalandian ko. Apiiiiiir!"
             $ play_music(summer,fadein=2.0,fadeout=2.0)
 
-            hide shirt with dissolve
-            $ casual = False
-
             scene sort_of_beautiful_beach_day
-            show shirt happy03 at center:
+            show shirt erm_blush05 at center:
                 yoffset 230
             with fade
 
-            t "Hehe, I have a swimsuit now!"
+            t "Ingat!"
 
             "Eileen seems pleased with herself."
 
