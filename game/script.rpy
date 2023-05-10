@@ -159,14 +159,69 @@ label start:
     
     Sabi ko sa'yo, di ba, {color=#fff}eleven years kitang hinintay?{/color} Eleven years akong walang ganito."""
     nar_nvl "{i}so, for the first time after such a long time, gagawa ako ng something na kakaiba{i}"
-    nar_nvl """\n{u}{color=#fff}...para sa'yo{/color}.{/u}
+    nar_nvl """\n{b}{u}{color=#fff}...para sa'yo{/color}.{/u}{/b}
 
     {i}{size=20}(Disclaimer: ngayon lang 'to kasi nga special.)
-    (Note: Pwede mo 'tong ipakita sa iba since wala akong sasabihing kabalbalan dito...or, at least, I will try. HAHA! Ang haba ng pasakalye ko.){/size}{/i}"""
+    (Note: Pwede mo 'tong ipakita sa iba since wala akong sasabihing kabalbalan dito...or, at least, I will try. HAHA! Ang haba ng pasakalye ko.){/size}{/i}
+    
+    
+    """
+    nvl clear
+    # page 3
+    nar_nvl """Game na talaga!
+    \n{b}Happy 1st month with me, Jessa! {i}{size=20}(...pero hindi tayo magkasama?){/size}{/i}{/b}
+    \n{i}{size=20}(Hindi ko na rin gagamitin ung \"hoy\" kasi baka ma-badtrip ka na naman tapos hindi mo na 'to ituloy, sayang effort ko.){/size}{/i}
+    """
+    nar_nvl "Also...Thank you."
+    nar_nvl "Thank you for letting me in to your life."
+    nar_nvl "I have a good idea kung paanong \"siguro\" e closed ka na sa pakikipagrelasyon kaya salamat at binuksan mo ulit yung pintuan ng puso mo para sa'kin."
+    nar_nvl """Alam kong madami pa akong hindi alam about you {i}{size=20}(kahit na one year kitang ina-assess...){/size}{/i},
+    \nwe're \"getting to know each other\" pa rin naman so, let us see this through, okay?"""
+    nar_nvl """Ako rin naman... I never would've thought {i}{size=20}(wow?){/size}{/i} na makikipagrelasyon ako ulit...
+    \nNang bigla-bigla...
+    \n{b}Sa'yo.{/b}"""
+    nar_nvl "{i}{size=20}(No offense meant dito ha? Snabi ko lang to kasi nga sabi mo hindi naman kita pinapansin nung magkatrabaho pa tayo. pero sabi mo lang talaga yon. Snob ka rin kase. XD){/size}{/i}"
+    nar_nvl "No. Seriously. Eleven years."
+    nar_nvl "Actually parang wala na talaga akong plano magjowa/mag-asawa/magpamilya before e."
+    nar_nvl "Masaya naman na ko sa petiks kong buhay-single with araw-araw na sinangag+longganisa o kaya pancit canton tapos cobra...ganon."
+    nar_nvl "I thought \"okay na yon. Naranasan ko namang magjowa at lumande.\""
 
+    nvl clear
+    # page 4
+    nar_nvl "Pero ewan ko lang din. Bigla ko na lang naisip na ang tagal na pala nating nag-uusap almost everyday..."
+    nar_nvl "Ang dami na pala nating nalaman tungkol sa isa't-isa...."
+    nar_nvl "Lagi pala tayong \"masaya lang\" sa mga usapan natin kahit hindi tayo magkasama..."
+    nar_nvl "Nasanay na pala akong andiyan ka. {i}{size=20}(Mmm...nasanay ka na rin naman, di ba? Di baaaa??){/size}{/i}"
+    nar_nvl "So, {b}why not ask you to be my girlfriend na?{/b}"
+    nar_nvl ""
+    nar_nvl "Baka naman kako kaya ko nang magcommit ulit?"
+    nar_nvl "Baka naman kaya ko na, at gusto ko nang mag-alaga at umintindi ulit?"
+    nar_nvl "Baka naman kailangan ko na ng kakulitan, ka-kumustahan, ka-good morning/good night-an,"
+    nar_nvl "kaharutan,"
+    nar_nvl "kalambingan,"
+    nar_nvl "katampuhan,"
+    nar_nvl "kaaway..."
+    nar_nvl "ulit?"
+    nar_nvl "So, ayun. Salamat. Salamat at nagkaroon ka ng lakas ng loob na tanungin ako."
+    nar_nvl "{b}Charoooooot! Haha!{/b}"
+    nar_nvl "{i}{size=20}(Guys, nagjo-joke lang ako, oke? Alam ni Jessa yan){/size}{/i}"
 
-
-
+    
+    nvl clear
+    # page 5
+    nar_nvl "Ayyyyy! Oo nga pala! Since bago pa lang tayo, I have a few Sana's para satin: {i}{size=20}(saka para pampahaba na rin...as if hindi pa 'to mahaba){/size}{/i}"
+    nar_nvl "Sana {i}{size=20}(at syempre: dapat!){/i}{/size} magtagal tayo. Yung tipong paaabutin mo ko ng 40 years old, ganon. Hehe"
+    nar_nvl "Sana okay lang din sayo yung paraan ng pagkikipagcommunicate ko. Kung hindi naman, sabihin mo lang tapos let's work it out. :)"
+    nar_nvl "Naniniwala akong communication is key at I'm looking forward to having discussions with you about what we want and what we do not want, what we should and should not do, etc., etc."
+    nar_nvl "...tapos ililista natin para pag may sumira sa usapan, may ebidensya. ;)"
+    nar_nvl "Sana matiis at matanggap mo ako kasi talagang ngayon lang ako ulit sumugal ng ganito."
+    nar_nvl """Lastly, sana open for tagging yung profile mo kasi ita-tag talaga kita in-time...para mapilitan ka nang magpakita dito samin at i-meet yung fansclub ko na matagal nang naghihintay sa magiging jowa ko: SA'YO. Hehe"""
+    nar_nvl "O gusto mo ngayon na? Ang problema kasi e yung trabaho ko. Ako nahihiya sa sarili ko kung ako ipapakilala mo dyan sa inyo e. {i}{size=20}(Ang assuming ko ba na ipapakilala mo ko? haha! Hintay lang muna tayo. Baka by 2nd, meron na.){/i}{/size}"
+    nar_nvl "Ayun na! Wala na 'kong masabi kasi nga sabi ko walang kabalbalan akong ihahalo dito e. Tama na siguro 'to?"
+    nar_nvl "Mahaba na yata masyado? Saka{i}{size=20}sal{/i}{/size} na yung susunod kasi baka hindi ka na kiligin pag \"ipinutok\" ko na lahat ng bala ko dito."
+    nar_nvl "{b}{size=50}Happy First Month sa'tin, Jessa!{/size}{/b}"
+    nar_nvl "{b}{size=50}Hindi ko na kukwestiyonin yung sarili ko: alam kong mahal na kita.{/size}{/b}"
+    nar_nvl "Looking-forward to sharing a lot of experiences with you. Muah!"
 
 
     ##################### after the 1st month message here

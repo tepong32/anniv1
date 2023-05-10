@@ -32,6 +32,7 @@ screen splash_settings():
             hbox:
                 xalign 0.5
                 vbox:
+                    ############################################### MOD THIS
                     style_prefix "radio"
                     label _("Typeface")
                     textbutton _("DejaVu Sans") action [gui.SetPreference("font", "DejaVuSans.ttf"), gui.SetPreference("size", 31), SetVariable("persistent.typeface", "DejaVuSans")] alt "Change font to DejaVu Sans"
